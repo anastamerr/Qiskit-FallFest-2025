@@ -749,76 +749,82 @@ body {
     margin-bottom: 15px;
 }
 
-/* Venue Section */
-.venue-content {
+/* Location Section */
+.location-section {
+    position: relative;
+    margin-top: 48px;
+    padding-bottom: 16px;
+}
+
+.location-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d4b6ff;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.1em;
+}
+
+.location-container {
+    padding-top: 8px;
+}
+
+.location-map-container {
+    background: rgba(138, 63, 252, 0.2);
+    padding: 40px;
+    border-radius: 47px;
+    border: 4px solid var(--quantum-purple);
+    box-shadow: 0 8px 32px rgba(138, 63, 252, 0.3);
+}
+
+.location-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: start;
-}
-
-.venue-info h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: var(--quantum-purple);
-}
-
-.venue-details {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.venue-detail strong {
-    color: var(--quantum-purple);
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.venue-detail ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.venue-detail li {
-    padding: 8px 0;
-    padding-left: 20px;
-    position: relative;
-}
-
-.venue-detail li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--quantum-purple);
-    font-weight: 600;
-}
-
-.venue-map {
-    background: var(--bg-tertiary);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--border-primary);
-}
-
-.map-placeholder {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
-    color: var(--white);
 }
 
-.map-placeholder p:first-child {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+.location-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.university-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.university-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.university-details p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-map {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    border: 3px solid var(--quantum-purple);
+    box-shadow: 0 8px 25px rgba(138, 63, 252, 0.4);
 }
 
 /* Register Section */
@@ -1025,9 +1031,23 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     
-    .venue-content {
+    .location-title {
+        font-size: 2rem;
+    }
+
+    .location-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .university-name {
+        font-size: 1.8rem;
+    }
+
+    .square-map {
+        width: 350px;
+        height: 350px;
     }
     
     .hero-buttons {
@@ -1072,5 +1092,26 @@ body {
         font-size: 1rem;
         color: var(--quantum-purple);
         font-weight: 700;
+    }
+
+    .location-title {
+        font-size: 1.8rem;
+    }
+
+    .location-map-container {
+        padding: 20px;
+    }
+
+    .university-name {
+        font-size: 1.5rem;
+    }
+
+    .university-details p {
+        font-size: 1rem;
+    }
+
+    .square-map {
+        width: 280px;
+        height: 280px;
     }
 }

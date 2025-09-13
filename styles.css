@@ -110,7 +110,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--quantum-blue);
+    color: var(--quantum-purple);
 }
 
 .dropdown {
@@ -164,11 +164,11 @@ body {
 
 .dropdown-item:hover {
     background: var(--bg-tertiary);
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
 }
 
 .register-btn {
-    background: linear-gradient(135deg, var(--quantum-blue), var(--quantum-purple));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     color: var(--white) !important;
     padding: 12px 24px;
     border-radius: 25px;
@@ -178,7 +178,7 @@ body {
 
 .register-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(15, 98, 254, 0.3);
+    box-shadow: 0 8px 25px rgba(138, 63, 252, 0.3);
 }
 
 .hamburger {
@@ -200,7 +200,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--quantum-blue) 50%, var(--quantum-purple) 100%);
+    background: linear-gradient(135deg, #2a1458 0%, var(--quantum-purple) 50%, #b467ff 100%);
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -232,7 +232,7 @@ body {
 .hero-badge {
     display: inline-block;
     padding: 8px 20px;
-    background: linear-gradient(135deg, var(--quantum-purple), var(--quantum-pink));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     color: var(--white);
     border-radius: 25px;
     font-size: 0.9rem;
@@ -247,7 +247,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--white), var(--quantum-cyan));
+    background: linear-gradient(135deg, var(--white), #d4b6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -256,7 +256,7 @@ body {
 .hero-subtitle {
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--quantum-pink);
+    color: #d4b6ff;
     margin-bottom: 20px;
 }
 
@@ -284,13 +284,13 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--quantum-cyan), var(--quantum-green));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     color: var(--white);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(8, 189, 186, 0.4);
+    box-shadow: 0 10px 30px rgba(138, 63, 252, 0.4);
 }
 
 .btn-secondary {
@@ -301,7 +301,7 @@ body {
 
 .btn-secondary:hover {
     background: var(--white);
-    color: var(--quantum-blue);
+    color: var(--quantum-purple);
 }
 
 .hero-visual {
@@ -316,9 +316,9 @@ body {
     align-items: center;
     width: 400px;
     height: 300px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(8, 189, 186, 0.1));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(138, 63, 252, 0.1));
     border-radius: 25px;
-    border: 1px solid rgba(8, 189, 186, 0.3);
+    border: 1px solid rgba(138, 63, 252, 0.3);
     backdrop-filter: blur(15px);
     position: relative;
     overflow: hidden;
@@ -349,7 +349,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent 48%, rgba(8, 189, 186, 0.1) 50%, transparent 52%);
+    background: linear-gradient(45deg, transparent 48%, rgba(138, 63, 252, 0.1) 50%, transparent 52%);
     animation: rotate 10s linear infinite;
     z-index: -1;
 }
@@ -397,7 +397,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(135deg, var(--quantum-blue), var(--quantum-purple));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     border-radius: 2px;
 }
 
@@ -425,7 +425,7 @@ body {
 .about-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    border-color: var(--quantum-cyan);
+    border-color: var(--quantum-purple);
 }
 
 .card-icon {
@@ -437,7 +437,7 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
     letter-spacing: -0.01em;
 }
 
@@ -476,7 +476,7 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 18px;
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
     letter-spacing: -0.01em;
 }
 
@@ -511,7 +511,7 @@ body {
     gap: 25px;
     margin-bottom: 28px;
     padding: 25px;
-    border-left: 4px solid var(--quantum-cyan);
+    border-left: 4px solid var(--quantum-purple);
     background: var(--bg-tertiary);
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -524,7 +524,7 @@ body {
 
 .time {
     font-weight: 600;
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
     white-space: nowrap;
     font-size: 0.9rem;
 }
@@ -561,7 +561,7 @@ body {
 .speaker-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    border-color: var(--quantum-pink);
+    border-color: var(--quantum-purple);
 }
 
 .speaker-image {
@@ -587,9 +587,39 @@ body {
 }
 
 .speaker-title {
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+/* LinkedIn Icons */
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--quantum-purple);
+    border-radius: 50%;
+    color: var(--white);
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 63, 252, 0.3);
+}
+
+.linkedin-link:hover {
+    background: #b467ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(138, 63, 252, 0.4);
+}
+
+.linkedin-link svg {
+    transition: all 0.3s ease;
+}
+
+.linkedin-link:hover svg {
+    transform: scale(1.1);
 }
 
 /* Team Section */
@@ -613,13 +643,13 @@ body {
 .team-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    border-color: var(--quantum-green);
+    border-color: var(--quantum-purple);
 }
 
 .team-image {
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg, var(--quantum-cyan), var(--quantum-green));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     border-radius: 50%;
     margin: 0 auto 20px;
 }
@@ -650,7 +680,7 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 30px;
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
 }
 
 .venue-details {
@@ -682,7 +712,7 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--quantum-green);
+    color: var(--quantum-purple);
     font-weight: 600;
 }
 
@@ -700,7 +730,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--quantum-blue), var(--quantum-purple));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     color: var(--white);
 }
 
@@ -712,7 +742,7 @@ body {
 
 /* Register Section */
 .register-section {
-    background: linear-gradient(135deg, var(--dark-blue), var(--quantum-blue));
+    background: linear-gradient(135deg, #2a1458, var(--quantum-purple));
     color: var(--white);
     text-align: center;
 }
@@ -723,7 +753,7 @@ body {
 }
 
 .register-section h2::after {
-    background: linear-gradient(135deg, var(--quantum-cyan), var(--quantum-green));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
 }
 
 .register-description {
@@ -746,17 +776,17 @@ body {
     padding: 20px 50px;
     font-size: 1.2rem;
     font-weight: 600;
-    background: linear-gradient(135deg, var(--quantum-cyan), var(--quantum-green));
+    background: linear-gradient(135deg, var(--quantum-purple), #b467ff);
     color: var(--white);
     text-decoration: none;
     border-radius: 35px;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(8, 189, 186, 0.4);
+    box-shadow: 0 8px 30px rgba(138, 63, 252, 0.4);
 }
 
 .btn-register:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(8, 189, 186, 0.6);
+    box-shadow: 0 15px 40px rgba(138, 63, 252, 0.6);
 }
 
 .btn-icon {
@@ -800,8 +830,8 @@ body {
 .form-group select:focus {
     outline: none;
     background: var(--bg-elevated);
-    border-color: var(--quantum-cyan);
-    box-shadow: 0 0 20px rgba(8, 189, 186, 0.3);
+    border-color: var(--quantum-purple);
+    box-shadow: 0 0 20px rgba(138, 63, 252, 0.3);
 }
 
 .form-group input::placeholder {
@@ -826,7 +856,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
 }
 
 .social-links {
@@ -841,7 +871,7 @@ body {
 }
 
 .social-links a:hover {
-    color: var(--quantum-cyan);
+    color: var(--quantum-purple);
 }
 
 .footer-bottom {
@@ -958,7 +988,7 @@ body {
     
     .time {
         font-size: 1rem;
-        color: var(--quantum-cyan);
+        color: var(--quantum-purple);
         font-weight: 700;
     }
 }

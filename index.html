@@ -103,54 +103,210 @@
         <section id="schedule" class="section">
             <div class="container">
                 <h2>Schedule</h2>
-                <div class="schedule-container">
-                    <div class="schedule-day">
-                        <h3>Day 1 - Introduction to Quantum</h3>
-                        <div class="schedule-item">
-                            <span class="time">09:00 - 10:00</span>
-                            <div class="event-details">
-                                <h4>Registration & Welcome</h4>
-                                <p>Check-in and opening ceremony</p>
+                <div class="schedule-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="scheduleTrack">
+                            <!-- Slide 1: Opening & Session 1 -->
+                            <div class="carousel-slide">
+                                <div class="schedule-day">
+                                    <h3>Opening - November 8th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 10:00</span>
+                                        <div class="event-details">
+                                            <h4>Registration & Welcome</h4>
+                                            <p>Check-in, welcome breakfast, and opening ceremony</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">10:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Computing Overview</h4>
+                                            <p>Introduction to quantum mechanics and quantum computing principles</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <h3>Session 1 - November 10th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Qiskit Fundamentals Workshop</h4>
+                                            <p>Hands-on introduction to Qiskit programming and quantum circuits</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 16:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Algorithms Deep Dive</h4>
+                                            <p>Exploring Grover's and Shor's algorithms with practical implementations</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">10:00 - 12:00</span>
-                            <div class="event-details">
-                                <h4>Quantum Computing Fundamentals</h4>
-                                <p>Introduction to quantum mechanics and quantum computing principles</p>
+
+                            <!-- Slide 2: Session 2 -->
+                            <div class="carousel-slide">
+                                <div class="schedule-day">
+                                    <h3>Session 2 - November 12th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Machine Learning</h4>
+                                            <p>Introduction to QML algorithms and variational quantum circuits</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 16:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Error Correction</h4>
+                                            <p>Understanding noise in quantum systems and mitigation strategies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <h3>Session 2 - November 13th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Optimization</h4>
+                                            <p>QAOA and quantum optimization algorithms for real-world problems</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 16:00</span>
+                                        <div class="event-details">
+                                            <h4>Industry Applications Workshop</h4>
+                                            <p>Practical quantum computing applications in finance and logistics</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">13:00 - 15:00</span>
-                            <div class="event-details">
-                                <h4>Qiskit Basics Workshop</h4>
-                                <p>Hands-on introduction to Qiskit programming</p>
+
+                            <!-- Slide 3: Session 3 -->
+                            <div class="carousel-slide">
+                                <div class="schedule-day">
+                                    <h3>Session 3 - November 15th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Advanced Quantum Circuits</h4>
+                                            <p>Building complex quantum circuits and optimization techniques</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 16:00</span>
+                                        <div class="event-details">
+                                            <h4>Quantum Networking</h4>
+                                            <p>Quantum communication protocols and distributed quantum computing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4: Talks -->
+                            <div class="carousel-slide">
+                                <div class="schedule-day">
+                                    <h3>Talks - November 16th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 10:30</span>
+                                        <div class="event-details">
+                                            <h4>Keynote: Future of Quantum Computing</h4>
+                                            <p>Industry leaders share insights on quantum technology roadmap</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">11:00 - 12:30</span>
+                                        <div class="event-details">
+                                            <h4>Research Presentations</h4>
+                                            <p>Latest research findings in quantum algorithms and hardware</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">14:00 - 17:00</span>
+                                        <div class="event-details">
+                                            <h4>Panel Discussion</h4>
+                                            <p>Q&A with quantum computing experts and industry professionals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <h3>Talks - November 18th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Startup Showcase</h4>
+                                            <p>Quantum startups present their innovative solutions</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 16:00</span>
+                                        <div class="event-details">
+                                            <h4>Career in Quantum Computing</h4>
+                                            <p>Career paths and opportunities in the quantum industry</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5: Team Presentations & Closing -->
+                            <div class="carousel-slide">
+                                <div class="schedule-day">
+                                    <h3>Team Presentations - November 19th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">09:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Project Presentations</h4>
+                                            <p>Teams present their quantum computing projects and solutions</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">13:00 - 15:00</span>
+                                        <div class="event-details">
+                                            <h4>Judging & Awards</h4>
+                                            <p>Project evaluation and recognition of outstanding contributions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <h3>Closing - November 20th</h3>
+                                    <div class="schedule-item">
+                                        <span class="time">10:00 - 11:00</span>
+                                        <div class="event-details">
+                                            <h4>Closing Ceremony</h4>
+                                            <p>Final remarks, certificate distribution, and networking session</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="time">11:00 - 12:00</span>
+                                        <div class="event-details">
+                                            <h4>Farewell Lunch</h4>
+                                            <p>Final networking opportunity and farewell</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="schedule-day">
-                        <h3>Day 2 - Advanced Topics</h3>
-                        <div class="schedule-item">
-                            <span class="time">09:00 - 11:00</span>
-                            <div class="event-details">
-                                <h4>Quantum Algorithms</h4>
-                                <p>Exploring Shor's, Grover's, and other quantum algorithms</p>
-                            </div>
+
+                    <!-- Carousel Navigation -->
+                    <div class="carousel-nav">
+                        <button class="carousel-btn prev-btn" id="prevBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                            </svg>
+                        </button>
+                        <div class="carousel-indicators" id="indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                            <span class="indicator" data-slide="4"></span>
                         </div>
-                        <div class="schedule-item">
-                            <span class="time">11:30 - 13:00</span>
-                            <div class="event-details">
-                                <h4>Industry Applications</h4>
-                                <p>Real-world quantum computing applications and case studies</p>
-                            </div>
-                        </div>
-                        <div class="schedule-item">
-                            <span class="time">14:00 - 17:00</span>
-                            <div class="event-details">
-                                <h4>Hackathon & Closing</h4>
-                                <p>Team challenges and event wrap-up</p>
-                            </div>
-                        </div>
+                        <button class="carousel-btn next-btn" id="nextBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>

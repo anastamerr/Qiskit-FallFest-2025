@@ -367,5 +367,125 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Schedule Carousel Functionality
+    let currentSlide = 0;
+    const track = document.getElementById('scheduleTrack');
+    const indicators = document.querySelectorAll('.indicator');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const totalSlides = 5;
+
+    function updateCarousel() {
+        // Move the track
+        track.style.transform = `translateX(-${currentSlide * 20}%)`;
+
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+
+        // Update button states
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+
+    function goToSlide(slideIndex) {
+        if (slideIndex >= 0 && slideIndex < totalSlides) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+    }
+
+    // Navigation button events
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < totalSlides - 1) {
+            goToSlide(currentSlide + 1);
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            goToSlide(currentSlide - 1);
+        }
+    });
+
+    // Indicator click events
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            goToSlide(index);
+        });
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (document.querySelector('.schedule-carousel:hover')) {
+            if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        }
+    });
+
+    // Touch/swipe support
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    track.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        currentX = e.touches[0].clientX;
+    });
+
+    track.addEventListener('touchend', () => {
+        if (!isDragging) return;
+
+        const diffX = startX - currentX;
+        const threshold = 50;
+
+        if (Math.abs(diffX) > threshold) {
+            if (diffX > 0 && currentSlide < totalSlides - 1) {
+                goToSlide(currentSlide + 1);
+            } else if (diffX < 0 && currentSlide > 0) {
+                goToSlide(currentSlide - 1);
+            }
+        }
+
+        isDragging = false;
+    });
+
+    // Initialize carousel
+    updateCarousel();
+
+    // Auto-advance carousel every 10 seconds (optional)
+    let autoAdvanceInterval = setInterval(() => {
+        if (currentSlide < totalSlides - 1) {
+            goToSlide(currentSlide + 1);
+        } else {
+            goToSlide(0);
+        }
+    }, 10000);
+
+    // Pause auto-advance on hover
+    const carousel = document.querySelector('.schedule-carousel');
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoAdvanceInterval);
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+        autoAdvanceInterval = setInterval(() => {
+            if (currentSlide < totalSlides - 1) {
+                goToSlide(currentSlide + 1);
+            } else {
+                goToSlide(0);
+            }
+        }, 10000);
+    });
+
     console.log('Qiskit Fall Fest 2025 - Website loaded successfully! 🚀');
 });

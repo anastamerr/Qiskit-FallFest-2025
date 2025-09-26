@@ -1,0 +1,56 @@
+Starting from 5:30 pm
+Opening 8/11 (Saturday) 
+Professors:
+Ahmed Younis → Quantum Computing 101 (1 hr)
+
+Previous winners to showcase their projects (30 min)
+Sponsor?? 
+Akl
+
+Gunzer → Quantum computing Applications (1 hr)
+
+Spin the Quantum????? (30 min)
+As2ela tetgaweb 3aleha
+7aga quantum
+Kahoot
+Superposition (Reflex Games)
+
+
+Hackathon Announcement and tool Demo (15 min)
+Educational (announce obvious ideas)
+
+Session 1: 9/11 Sunday (1:30hr)
+Workshop: Intro to Qiskit, google collab, tool Anas 
+Gates, Circuits, Quantum 101, Superposition
+Anas Session (Demo website) (45 min)
+
+Session 2 11/11 Tuesday (2:30 hr)
+Entanglement
+Superdense coding, Teleportation
+
+Session 3 13/11 Thursday (2:30hr)
+Quantum Oracles, algorithms: Deutsch, Bernstein-Vazirani
+
+Saturday lab tour?
+Haytham Omran → How quantum hardware works (photonics)
+(tour fl lab)???
+
+Sunday: Talks
+Monday: Talks
+Tuesday: Talks
+
+
+Teams Presentation 19/11 Wednesday
+Will have judges 
+IBM Speaker (in-person)
+
+Closing 20/11 Thursday
+IBM Speaker (virtual) → IBM Quantum ecosystem
+Announcement of winners
+
+
+
+Potential Speakers:
+
+Hisham Omran
+Mohamed Zidan

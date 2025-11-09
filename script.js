@@ -462,30 +462,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize carousel
     updateCarousel();
 
-    // Auto-advance carousel every 10 seconds (optional)
-    let autoAdvanceInterval = setInterval(() => {
-        if (currentSlide < totalSlides - 1) {
-            goToSlide(currentSlide + 1);
-        } else {
-            goToSlide(0);
-        }
-    }, 10000);
-
-    // Pause auto-advance on hover
-    const carousel = document.querySelector('.schedule-carousel');
-    carousel.addEventListener('mouseenter', () => {
-        clearInterval(autoAdvanceInterval);
-    });
-
-    carousel.addEventListener('mouseleave', () => {
-        autoAdvanceInterval = setInterval(() => {
-            if (currentSlide < totalSlides - 1) {
-                goToSlide(currentSlide + 1);
-            } else {
-                goToSlide(0);
-            }
-        }, 10000);
-    });
 
     console.log('Qiskit Fall Fest 2025 - Website loaded successfully! 🚀');
 });
